@@ -6,7 +6,7 @@ import { Meal } from './meal.model';
   selector: 'my-app',
   template: `
   <div class="container">
-
+    <h1>Track-a-meal</h1>
   </div>
     `
 })

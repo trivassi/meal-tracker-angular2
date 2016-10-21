@@ -1,8 +1,8 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
+import { PiesListComponent } from './meal-list.component';
 import { AppComponent }   from './app.component';
-import { TaskListComponent } from './task-list.component';
 
 @NgModule({
   imports: [
@@ -10,8 +10,8 @@ import { TaskListComponent } from './task-list.component';
     FormsModule
   ],
   declarations: [
+    MealListComponent,
     AppComponent,
-    TaskListComponent,
   ],
   bootstrap:    [ AppComponent ]
 })
