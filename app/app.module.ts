@@ -1,7 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
-import { PiesListComponent } from './meal-list.component';
+import { MealListComponent } from './meal-list.component';
 import { AppComponent }   from './app.component';
 
 @NgModule({
