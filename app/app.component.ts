@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { Meal } from './meal.model';
 
 
-@Component({
+@Component ({
   selector: 'my-app',
   template: `
   <div class="container">
     <h1>Track-a-meal</h1>
     <meal-list
-      [childMealList]="selectedMeal"
+      [childMealList]="masterMealList"
       (clickSender)="showDetails($event)"
     ></meal-list>
     <edit-meal
