@@ -17,5 +17,8 @@ import { Meal } from './meal.model';
 
 export class MealListComponent {
   @Input() childMealList: Meal[];
-
+  @Output() doneClickedSender = new eventEmitter();
+  doneClicked(mealEdit: Meal) {
+    this.doneClickedSender.emit(mealEdit);
+  }
 }

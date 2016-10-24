@@ -7,7 +7,13 @@ import { Meal } from './meal.model';
   template: `
   <div class="container">
     <h1>Track-a-meal</h1>
-      <meal-list></meal-list>
+      <meal-list
+        [childMealList]="selectedMeal"
+      ></meal-list>
+      <edit-meal
+      [childMealList]="selectedMeal"
+      (doneClickedSender)="finishedEditing()"
+      ></edit-meal>
   </div>
     `
 })
